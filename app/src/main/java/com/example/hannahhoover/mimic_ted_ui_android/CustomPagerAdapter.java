@@ -1,25 +1,39 @@
 package com.example.hannahhoover.mimic_ted_ui_android;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
-import android.view.View;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
-public class CustomPagerAdapter extends PagerAdapter {
+public class CustomPagerAdapter extends FragmentStatePagerAdapter {
 
-    private Context pageContext;
+    private int numOfTabs;
 
-    public CustomPagerAdapter(Context context) {
-        this.pageContext = context;
+    public CustomPagerAdapter(FragmentManager fragmentManager, int numOfTabs) {
+        super(fragmentManager);
+        this.numOfTabs = numOfTabs;
+    }
+
+
+    @Override
+    public Fragment getItem(int position) {
+        switch (position) {
+            case 0:
+                return new TalksTabFragment();
+            case 1:
+                return new PlaylistsTabFragment();
+            case 2:
+                return new PodcastsTabFragment();
+            case 3:
+                return new SurpriseMeTabFragment();
+            case 4:
+                return new MyTalksTabFragment();
+            default:
+                return null;
+        }
     }
 
     @Override
     public int getCount() {
-        return 0;
-    }
-
-    @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return false;
+        return numOfTabs;
     }
 }
