@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_talks));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_playlists));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_podcasts));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.surprise_me));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_surpriseme_temp));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_mytalks));
         // Set the tabs to fill the entire layout
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
