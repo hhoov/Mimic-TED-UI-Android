@@ -6,4 +6,5 @@
     <color name="colorLight">#FFFFFF</color>
     <color name="colorTED">#e62b25</color>
     <color name="colorGrey">#8a8a8a</color>
+    <color name="colorBlack">#000000</color>
 </resources>
