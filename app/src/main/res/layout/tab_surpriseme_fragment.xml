@@ -9,11 +9,11 @@
         android:id="@+id/surprise_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You want to see something..."
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textAlignment="center"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:textColor="@color/colorBlack"/>
+        android:text="You want to see something..."
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/courageous"
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/surprise_header"
         android:clickable="true"
+
         android:focusable="true"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:text="Courageous"
@@ -32,89 +33,113 @@
         android:id="@+id/funny"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Funny"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/courageous"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Funny"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/persuasive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Persuasive"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/funny"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Persuasive"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/ingenious"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingenious"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/persuasive"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Ingenious"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/jaw_dropping"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jaw-dropping"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/ingenious"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Jaw-dropping"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/beautiful"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Beautiful"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/jaw_dropping"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Beautiful"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/fascinating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fascinating"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/beautiful"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Fascinating"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/informative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informative"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/fascinating"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Informative"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
     <TextView
         android:id="@+id/inspiring"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inspiring"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@id/informative"
-        android:textColor="@color/colorTED"/>
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Inspiring"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTED" />
 
 
 </RelativeLayout>
