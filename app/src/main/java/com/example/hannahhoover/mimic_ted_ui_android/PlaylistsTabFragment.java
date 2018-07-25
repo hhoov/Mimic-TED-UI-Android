@@ -35,7 +35,7 @@ public class PlaylistsTabFragment extends Fragment {
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(adapter);
-        return recyclerView;
+        return view;
     }
 
 }
