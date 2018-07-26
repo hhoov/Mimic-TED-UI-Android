@@ -1,4 +1,4 @@
-package com.example.hannahhoover.mimic_ted_ui_android;
+package com.example.hannahhoover.mock_ted_android;
 
 import org.junit.Test;
 
