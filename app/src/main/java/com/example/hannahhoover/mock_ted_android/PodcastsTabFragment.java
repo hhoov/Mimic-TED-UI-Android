@@ -19,19 +19,22 @@ public class PodcastsTabFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.tab_podcasts_fragment, container, false);
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this.getActivity(), 2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setHasFixedSize(true);
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(adapter);
+
+        RecyclerView.LayoutManager gridLayoutManager = new GridLayoutManager(this.getActivity(), 2);
+        recyclerView.setLayoutManager(gridLayoutManager);
+
         return view;
     }
 
