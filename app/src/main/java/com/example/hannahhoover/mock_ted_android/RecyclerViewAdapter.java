@@ -1,7 +1,6 @@
 package com.example.hannahhoover.mock_ted_android;
 
 import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,9 +14,27 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public RecyclerViewAdapter() {
     }
 
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView cardView;
+
+        ViewHolder(View view) {
+            super(view);
+            cardView = view.findViewById(R.id.card_view);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("CardView", "CardView has been clicked.");
+                }
+            });
+
+
+        }
+    }
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.talks_card_view, parent, false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
@@ -25,7 +42,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.playlistName.setText("Heyo");
+        holder.cardView.setText(R.string.app_name);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,17 +60,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public int getItemCount() {
         return 0;
     }
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        CardView cardView;
-        TextView playlistName;
-
-        ViewHolder(View view) {
-            super(view);
-            cardView = view.findViewById(R.id.card_view);
-
-        }
-    }
-
 
 }

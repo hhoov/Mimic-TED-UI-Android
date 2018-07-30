@@ -3,8 +3,8 @@
     <string name="talks">Talks</string>
     <string name="playlists">Playlists</string>
     <string name="podcasts">Podcasts</string>
-    <string name="surprise_me">Surprise Me</string>
-    <string name="my_talks">My Talks</string>
+    <string name="surprise_me">Surprise me</string>
+    <string name="my_talks">My talks</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

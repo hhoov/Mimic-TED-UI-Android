@@ -29,7 +29,6 @@ public class PlaylistsTabFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this.getActivity(), 2);
         recyclerView.setLayoutManager(gridLayoutManager);
-
         RecyclerViewAdapter adapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(adapter);
         return view;

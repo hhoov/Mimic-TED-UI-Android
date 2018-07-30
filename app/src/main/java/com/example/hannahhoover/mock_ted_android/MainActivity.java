@@ -22,11 +22,21 @@ public class MainActivity extends AppCompatActivity {
         // Create an instance of the tab layout from the view
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         // Set the text for each tab
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_talks));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_playlists));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_podcasts));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_surpriseme_temp));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_tab_mytalks));
+        tabLayout.addTab(tabLayout.newTab()
+                .setIcon(R.drawable.ic_tab_talks)
+                .setContentDescription(R.string.talks));
+        tabLayout.addTab(tabLayout.newTab()
+                .setIcon(R.drawable.ic_tab_playlists)
+                .setContentDescription(R.string.playlists));
+        tabLayout.addTab(tabLayout.newTab()
+                .setIcon(R.drawable.ic_tab_podcasts)
+                .setContentDescription(R.string.podcasts));
+        tabLayout.addTab(tabLayout.newTab()
+                .setIcon(R.drawable.ic_tab_surpriseme_temp)
+                .setContentDescription(R.string.surprise_me));
+        tabLayout.addTab(tabLayout.newTab()
+                .setIcon(R.drawable.ic_tab_mytalks)
+                .setContentDescription(R.string.my_talks));
         // Set the tabs to fill the entire layout
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
